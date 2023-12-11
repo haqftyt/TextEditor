@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Code Pencil</title>
+</head>
+<body>
+    <script src="index.js"></script>
+   <div class="container">
+    <div class="left">
+        <div class="label">
+            <label for="html-code"><i class="fa fa-html5"></i>HTML</label>
+        </div>
+        <textarea  id="html-code" onkeyup="run()"></textarea>
+        <div class="label">
+            <label for="css-code"><i class="fa fa-css3"></i>CSS</label>
+        </div>
+        <textarea  id="css-code"onkeyup="run()"></textarea>
+        <div class="label">
+            <label for="js-code"><i class="fa fa-code"></i>Javascript</label>
+        </div>
+        <textarea  id="js-code"onkeyup="run()"></textarea>
+    </div>
+      <div class="right">
+        <div class="label">
+            <label for="output"><i class="fa fa-play"></i>Output</label>
+        </div>
+        <iframe id="output"onkeyup="run()"></iframe>
+      </div>
+   </div>
+</body>
+</html>
